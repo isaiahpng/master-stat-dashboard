@@ -3,35 +3,100 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 84px;
-    padding: 0 48px;
+    width: min(90%, 1200px);
+    min-height: 84px;
+    margin: 2rem auto;
+
+    padding: 0 3rem;
+
     border-radius: 999px;
-    background: #3f3f3f;
+    background-color: #3F3F3F;
 }
 
 .navbar-logo {
     transform: translateY(-6px);
+
     font-family: MizuFontAlphabet, sans-serif;
     font-size: 32px;
-    color: rgba(216, 254, 43, 1);    
+    color: #D8FE2B;
 }
 
 .period {
-    color: rgba(243, 103, 21, 1);
+    color: #F36715;
 }
 
 .navbar-links {
     display: flex;
-    gap: 56px;
-    font-family: Segoe UI, sans-serif;   
+    align-items: center;
+    gap: 3.5rem;
+
+    font-family: "Segoe UI", sans-serif;
 }
 
 .navbar-links a {
     text-decoration: none;
-    color: rgba(216, 254, 43, 1);   
+    color: #D8FE2B;
+    transition: color 0.25s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+    color: #F36715;
 }
 
 .navbar-actions {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
+}
+
+.login-button,
+.signup-button {
+    min-width: 140px;
+
+    padding: 0.75rem 2.5rem;
+
+    border-radius: 999px;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.login-button {
+    border: none;
+    background-color: #D8FE2B;
+    color: #3F3F3F;
+}
+
+.login-button:hover {
+    background-color: #F36715;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.signup-button {
+    border: 2px solid #F36715;
+    background-color: transparent;
+    color: #F36715;
+}
+
+.signup-button:hover {
+    background-color: #F36715;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+.navbar-logo span {
+    transition: color 0.08s linear;
+}
+
+.navbar {
+    position: relative;
+    z-index: 3;
 }
