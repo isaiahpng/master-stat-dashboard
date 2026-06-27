@@ -1,4 +1,23 @@
 import { Typewriter } from "react-simple-typewriter";
+import ReactSpeedometer from "react-d3-speedometer";
+
+function getZScoreColor(score: number) {
+    const min = 0;
+    const max = 5;
+
+    const t = Math.max(min, Math.min(score, max)) / max;
+
+    const start = { r: 222, g: 40, b: 17 };
+    const end = { r: 216, g: 254, b: 43 };
+
+    const r = Math.round(start.r + (end.r - start.r) * t);
+    const g = Math.round(start.g + (end.g - start.g) * t);
+    const b = Math.round(start.b + (end.b - start.b) * t);
+
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+const zScore = 0;
 
 export default function BentoSection() {
     return (
@@ -23,21 +42,30 @@ export default function BentoSection() {
                     <div className="relative lg:row-span-2">
                         <div className="absolute inset-px rounded-lg border border-white/15 bg-[rgba(63,63,63,0.72)] backdrop-blur-[18px] max-lg:rounded-t-4xl" />
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-                            <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center dark:text-white">
-                                    Mobile friendly
-                                </p>
-                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center dark:text-gray-400">
-                                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-                                </p>
-                            </div>
-                            <div className="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
-                                <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl dark:shadow-none dark:outline dark:outline-white/20">
-                                    <img
-                                        alt=""
-                                        src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
-                                        className="size-full object-cover object-top"
-                                    />
+                            <div className="flex h-full items-center justify-center">
+                                <div className="z-score-container">
+
+                                    <p className="z-score">
+                                        {String(Number.isInteger(zScore) ? zScore : zScore.toFixed(1))
+                                            .split("")
+                                            .map((char, index) => (
+                                                <span
+                                                    key={index}
+                                                    className={char === "." ? "z-score-dot" : "z-score-digit"}
+                                                    style={{ color: getZScoreColor(zScore) }}
+                                                >
+                                                    {char}
+                                                </span>
+                                            ))}
+                                    </p>
+
+                                    <p className="z-score-title">
+                                        Your GameStat
+                                    </p>
+
+                                    <p className="z-score-info">
+                                        Sign in to view your stat information
+                                    </p>
                                 </div>
                             </div>
                         </div>

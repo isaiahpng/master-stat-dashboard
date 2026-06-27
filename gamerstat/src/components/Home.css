@@ -117,3 +117,55 @@
     font-size: 3rem;
     font-weight: 700;
 }
+
+.z-score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.z-score {
+    margin: 0;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 0.9;
+
+    color: inherit;
+
+
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.18);
+
+    animation: zFloat 3s ease-in-out infinite;
+}
+
+.z-score-title {
+    margin-top: 0.75rem;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+
+.z-score-info {
+    margin-top: 0.5rem;
+    width: 80%;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+@keyframes zFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+}
