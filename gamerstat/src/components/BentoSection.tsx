@@ -17,7 +17,7 @@ function getZScoreColor(score: number) {
     return `rgb(${r}, ${g}, ${b})`;
 }
 
-const zScore = ;
+const zScore = 0;
 
 export default function BentoSection() {
     return (
