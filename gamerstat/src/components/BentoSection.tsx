@@ -1,5 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
-import ReactSpeedometer from "react-d3-speedometer";
+//import ReactSpeedometer from "react-d3-speedometer";
 
 function getZScoreColor(score: number) {
     const min = 0;
@@ -17,7 +17,7 @@ function getZScoreColor(score: number) {
     return `rgb(${r}, ${g}, ${b})`;
 }
 
-const zScore = 0;
+const zScore = ;
 
 export default function BentoSection() {
     return (
