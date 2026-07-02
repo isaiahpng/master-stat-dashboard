@@ -1,16 +1,19 @@
-import bgImage from "../assets/bg.jpg";
-import BentoSection from "./BentoSection";
-import "./Home.css";
+import DotBg from "./DotBg"
+import BentoSection from "./BentoSection"
+import "./Home.css"
 
 function Home() {
     return (
         <main className="home">
-            <img src={bgImage} className="home-bg" alt="" />
+            <DotBg />
 
             <div className="home-overlay" />
-            <BentoSection />
+
+            <div className="home-content">
+                <BentoSection />
+            </div>
         </main>
-    );
+    )
 }
 
-export default Home;
+export default Home
