@@ -1,0 +1,56 @@
+.pressure-bar-wrapper {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.pressure-bar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 0.75rem;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.pressure-bar {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 6px;
+
+    width: 100%;
+}
+
+.pressure-segment {
+    height: 12px;
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.pressure-segment.active {
+    background: linear-gradient(
+        90deg,
+        #de2811 0%,
+        #ff6a00 45%,
+        #d8fe2b 100%
+    );
+
+    box-shadow:
+        0 0 10px rgba(216, 254, 43, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.pressure-bar-labels {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 0.65rem;
+
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.45);
+}
