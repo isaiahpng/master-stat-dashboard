@@ -24,7 +24,7 @@ const zScore = 0
 
 export default function HomeBentoSection() {
     return (
-        <div className="relative z-10 pt-2 pb-24">
+        <section id="overview" className="relative z-10 pt-2 pb-40">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <h2 className="welcome-title">Welcome back,</h2>
 
@@ -161,6 +161,6 @@ export default function HomeBentoSection() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -52,14 +52,22 @@
     gap: 1rem;
 }
 
-.navbar-links a {
-    text-decoration: none;
+.navbar-links button {
+    border: none;
+    background: transparent;
+    padding: 0;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1rem;
+
     color: #D8FE2B;
+    cursor: pointer;
+
     transition: color 0.25s ease;
 }
 
-.navbar-links a:hover,
-.navbar-links a.active {
+.navbar-links button:hover,
+.navbar-links button.active {
     color: #F36715;
 }
 
@@ -99,4 +107,27 @@
     background-color: #F36715;
     color: #FFFFFF;
     transform: translateY(-2px);
+}
+
+@media (min-width: 900px) {
+    .navbar {
+        position: fixed;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 50;
+
+        margin: 0;
+    }
+}
+
+@media (max-width: 899px) {
+    .navbar {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+
+        margin: 2rem auto;
+    }
 }

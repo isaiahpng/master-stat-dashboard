@@ -3,13 +3,13 @@ import "./DashboardBentoSection.css"
 export default function DashboardBentoSection() {
     return (
         <section
-            id="dashboard"
+            id="advanced-stats"
             className="dashboard-bento-section relative z-10 pt-2 pb-24"
         >
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-                <h2 className="dashboard-title">Dashboard</h2>
+                <h2 className="dashboard-title">Advanced Stats</h2>
 
-                <div className="dashboard-grid mt-6 grid gap-4 sm:mt-8 lg:grid-cols-3 lg:grid-rows-2">
+                <div className="dashboard-grid mt-3 grid gap-4 lg:grid-cols-3 lg:grid-rows-2">
                     {/* Left large card */}
                     <div className="relative lg:row-span-2">
                         <div className="absolute inset-px rounded-[2rem] border border-white/1 bg-[rgba(63, 63, 63, 0.25)] backdrop-blur-[18px] backdrop-saturate-150" />
