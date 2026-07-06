@@ -2,6 +2,7 @@ import { Typewriter } from "react-simple-typewriter"
 import Example from "./LineChart"
 import SegmentedPressureBar from "./SegmentedPressureBar"
 import PerformanceReviewChart from "./PerformanceReviewChart"
+import "./HomeBentoSection.css"
 
 function getZScoreColor(score: number) {
     const min = 0
@@ -21,7 +22,7 @@ function getZScoreColor(score: number) {
 
 const zScore = 0
 
-export default function BentoSection() {
+export default function HomeBentoSection() {
     return (
         <div className="relative z-10 pt-2 pb-24">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">

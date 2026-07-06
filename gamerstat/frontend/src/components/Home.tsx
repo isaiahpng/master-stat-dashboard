@@ -1,5 +1,6 @@
 import DotBg from "./DotBg"
-import BentoSection from "./BentoSection"
+import HomeBentoSection from "./HomeBentoSection"
+import DashboardBentoSection from "./DashboardBentoSection"
 import "./Home.css"
 
 function Home() {
@@ -10,7 +11,8 @@ function Home() {
             <div className="home-overlay" />
 
             <div className="home-content">
-                <BentoSection />
+                <HomeBentoSection />
+                <DashboardBentoSection />
             </div>
         </main>
     )

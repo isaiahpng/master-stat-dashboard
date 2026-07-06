@@ -8,7 +8,7 @@ PLAYER_ID = "ChakaKhan-11335"
 
 
 def get_player_summary(player_id):
-    url = f"{BASE_URL}/players/{player_id}/summary"
+    url = f"{BASE_URL}/players/{player_id}/stats/summary"
 
     print(f"\nRequesting:\n{url}\n")
 

@@ -6,3 +6,11 @@
   overflow: hidden;
   background: #000;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
