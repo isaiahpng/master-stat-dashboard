@@ -294,3 +294,35 @@
 .username-input::placeholder {
     color: rgba(255, 255, 255, 0.35);
 }
+
+.search-loading {
+    width: 220px;
+    height: 6px;
+    margin: 1rem auto 0;
+
+    overflow: hidden;
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.search-loading-bar {
+    width: 45%;
+    height: 100%;
+
+    border-radius: inherit;
+    background: rgba(255, 255, 255, 0.75);
+
+    animation: searchLoading 1s ease-in-out infinite;
+}
+
+@keyframes searchLoading {
+    0% {
+        transform: translateX(-120%);
+    }
+
+    100% {
+        transform: translateX(260%);
+    }
+}

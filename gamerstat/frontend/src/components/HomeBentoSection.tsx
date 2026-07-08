@@ -9,6 +9,7 @@ type HomeBentoSectionProps = {
     playerInput: string
     setPlayerInput: (value: string) => void
     onSearch: (playerName: string) => void
+    isLoading: boolean
 }
 
 function getGameStatColor(score: number) {
@@ -36,6 +37,7 @@ export default function HomeBentoSection({
     playerInput,
     setPlayerInput,
     onSearch,
+    isLoading,
 }: HomeBentoSectionProps) {
     const [isEditingPlayer, setIsEditingPlayer] = useState(false)
 
@@ -98,6 +100,11 @@ export default function HomeBentoSection({
                             </button>
                         )}
                     </div>
+                    {isLoading && (
+                        <div className="search-loading">
+                            <div className="search-loading-bar" />
+                        </div>
+                    )}
                 </div>
 
                 <div className="mt-6 grid gap-4 sm:mt-8 lg:grid-cols-3 lg:grid-rows-2">

@@ -53,6 +53,7 @@ const blankSummary: GameStatSummary = {
 function Home() {
     const [summary, setSummary] = useState<GameStatSummary>(blankSummary)
     const [playerInput, setPlayerInput] = useState("")
+    const [isLoading, setIsLoading] = useState(false)
 
     function normalizePlayerId(playerName: string) {
         return playerName.trim().replace("#", "-")
@@ -65,14 +66,12 @@ function Home() {
             return
         }
 
-        console.log("Searching player:", playerId)
+        setIsLoading(true)
 
         try {
             const response = await fetch(
                 `/.netlify/functions/gamestat?playerId=${encodeURIComponent(playerId)}`
             )
-
-            console.log("Function response status:", response.status)
 
             if (!response.ok) {
                 const errorData = await response.json()
@@ -81,12 +80,11 @@ function Home() {
             }
 
             const data = await response.json()
-
-            console.log("GameStat summary returned:", data)
-
             setSummary(data)
         } catch (error) {
             console.error("Failed to search player:", error)
+        } finally {
+            setIsLoading(false)
         }
     }
 
@@ -102,6 +100,7 @@ function Home() {
                     playerInput={playerInput}
                     setPlayerInput={setPlayerInput}
                     onSearch={handlePlayerSearch}
+                    isLoading={isLoading}
                 />
 
                 <DashboardBentoSection summary={summary} />
