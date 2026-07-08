@@ -1,12 +1,24 @@
-```md
 # GameStat
 
-GameStat is a multi-game player analytics platform in development, currently focused on Overwatch player data.
-Users can search a public Overwatch BattleTag, pull live stats, and view custom performance metrics such as:
-GameStat Score, Pressure Rating, Reliability Score, Hero Confidence, Flex Rating, Role Confidence, and Hero Pool.
+GameStat is a multi-game player analytics platform in development, currently working first with Overwatch player data.
 
-The long-term goal is to expand GameStat into a cross-game analytics tool for competitive players,
-combining stat tracking, custom scoring systems, and AI-generated performance insights across multiple games.
+Users can search a public Overwatch BattleTag, pull live player stats, and view custom performance insights through a responsive analytics dashboard.
+
+The long-term goal is to expand GameStat into a cross-game analytics tool for competitive players, combining stat tracking, custom scoring systems, and AI-generated performance insights across multiple games.
+
+## Live Demo
+
+Live Site: (https://gamerstat.netlify.app/)
+
+GitHub Repo: (https://github.com/isaiahpng/master-stat-dashboard)
+
+## Current Game Support
+
+GameStat currently supports:
+
+- Overwatch
+
+Future versions are planned to support more games.
 
 ## Features
 
