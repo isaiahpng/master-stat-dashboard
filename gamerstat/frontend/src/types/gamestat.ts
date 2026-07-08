@@ -1,4 +1,3 @@
-
 export type GameStatSummary = {
     gamestat_score: number
     ai_review?: string
@@ -13,11 +12,18 @@ export type GameStatSummary = {
     flex_label: string
 
     performance_snapshot: {
+        scores: {
+            key: string
+            label: string
+            score: number
+        }[]
         strongest_area: {
+            key?: string
             label: string
             score: number
         }
         weakest_area: {
+            key?: string
             label: string
             score: number
         }
@@ -41,7 +47,14 @@ export type GameStatSummary = {
             winrate: number
             kda: number
             games_played: number
-        }
+        } | null
+        all_roles: {
+            role: string
+            role_confidence: number
+            winrate: number
+            kda: number
+            games_played: number
+        }[]
     }
 
     hero_pool: {

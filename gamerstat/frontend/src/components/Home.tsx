@@ -1,22 +1,58 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import DotBg from "./DotBg"
 import HomeBentoSection from "./HomeBentoSection"
 import DashboardBentoSection from "./DashboardBentoSection"
 import type { GameStatSummary } from "../types/gamestat"
 import "./Home.css"
 
-function Home() {
-    const [summary, setSummary] = useState<GameStatSummary | null>(null)
-    const [playerInput, setPlayerInput] = useState("")
+const blankSummary: GameStatSummary = {
+    gamestat_score: 0,
+    ai_review: "Search a public Overwatch BattleTag to generate a player review.",
 
-    useEffect(() => {
-        fetch("/data/ChakaKhan-11335_gamestat_summary.json")
-            .then((response) => response.json())
-            .then((data) => setSummary(data))
-            .catch((error) => {
-                console.error("Failed to load GameStat summary:", error)
-            })
-    }, [])
+    pressure_rating: 0,
+    pressure_rating_5: 0,
+
+    reliability_score: 0,
+    reliability_label: "Waiting for search",
+
+    flex_rating: 0,
+    flex_label: "Waiting for search",
+
+    performance_snapshot: {
+        scores: [],
+        strongest_area: {
+            label: "Waiting for search",
+            score: 0,
+        },
+        weakest_area: {
+            label: "Waiting for search",
+            score: 0,
+        },
+    },
+
+    hero_confidence: {
+        top_heroes: [],
+    },
+
+    role_confidence: {
+        best_role: null,
+        all_roles: [],
+    },
+
+    hero_pool: {
+        counts: {
+            "Unproven Pick": 0,
+            "Risk Pick": 0,
+            "Comfort Pick": 0,
+            "Proven Pick": 0,
+        },
+        risk_picks: [],
+    },
+}
+
+function Home() {
+    const [summary, setSummary] = useState<GameStatSummary>(blankSummary)
+    const [playerInput, setPlayerInput] = useState("")
 
     function normalizePlayerId(playerName: string) {
         return playerName.trim().replace("#", "-")
