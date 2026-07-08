@@ -1,5 +1,7 @@
+
 export type GameStatSummary = {
     gamestat_score: number
+    ai_review?: string
 
     pressure_rating: number
     pressure_rating_5: number

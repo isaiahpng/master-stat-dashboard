@@ -22,13 +22,36 @@ function Home() {
         return playerName.trim().replace("#", "-")
     }
 
-    function handlePlayerSearch(playerName: string) {
+    async function handlePlayerSearch(playerName: string) {
         const playerId = normalizePlayerId(playerName)
+
+        if (!playerId) {
+            return
+        }
 
         console.log("Searching player:", playerId)
 
-        // Later this will become the real API call:
-        // fetch(`/api/gamestat?playerId=${playerId}`)
+        try {
+            const response = await fetch(
+                `/.netlify/functions/gamestat?playerId=${encodeURIComponent(playerId)}`
+            )
+
+            console.log("Function response status:", response.status)
+
+            if (!response.ok) {
+                const errorData = await response.json()
+                console.error("Function returned an error:", errorData)
+                return
+            }
+
+            const data = await response.json()
+
+            console.log("GameStat summary returned:", data)
+
+            setSummary(data)
+        } catch (error) {
+            console.error("Failed to search player:", error)
+        }
     }
 
     return (

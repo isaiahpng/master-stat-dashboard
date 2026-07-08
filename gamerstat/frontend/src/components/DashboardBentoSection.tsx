@@ -38,9 +38,12 @@ export default function DashboardBentoSection({ summary }: DashboardBentoSection
 
     const trustedHeroCount = provenCount + comfortCount
 
-    const aiReviewText = summary
-        ? `You profile as a ${flexLabel.toLowerCase()} player with ${formatLabel(bestRole?.role)} as your strongest role. Your top hero is ${formatLabel(topHero?.hero)}, and your biggest improvement area is ${summary.performance_snapshot.weakest_area.label.toLowerCase()}.`
-        : "Loading player review..."
+    const aiReviewText = summary?.ai_review
+        ?? (
+            summary
+                ? `You profile as a ${flexLabel.toLowerCase()} player with ${formatLabel(bestRole?.role)} as your strongest role. Your top hero is ${formatLabel(topHero?.hero)}, and your biggest improvement area is ${summary.performance_snapshot.weakest_area.label.toLowerCase()}.`
+                : "Loading player review..."
+        )
 
     return (
         <section
