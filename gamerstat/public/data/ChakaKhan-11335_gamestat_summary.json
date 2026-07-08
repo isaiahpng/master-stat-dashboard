@@ -1,0 +1,317 @@
+{
+    "gamestat_score": 56,
+    "pressure_rating": 37,
+    "pressure_rating_5": 1.9,
+    "reliability_score": 58,
+    "reliability_label": "Reliable",
+    "performance_snapshot": {
+        "scores": [
+            {
+                "key": "winrate_score",
+                "label": "Win Rate",
+                "score": 40
+            },
+            {
+                "key": "kda_score",
+                "label": "KDA",
+                "score": 56
+            },
+            {
+                "key": "pressure_rating",
+                "label": "Pressure",
+                "score": 37
+            },
+            {
+                "key": "flex_rating",
+                "label": "Flex",
+                "score": 38
+            },
+            {
+                "key": "best_role_score",
+                "label": "Best Role",
+                "score": 70
+            },
+            {
+                "key": "top_hero_score",
+                "label": "Top Hero",
+                "score": 86
+            }
+        ],
+        "strongest_area": {
+            "key": "top_hero_score",
+            "label": "Top Hero",
+            "score": 86
+        },
+        "weakest_area": {
+            "key": "pressure_rating",
+            "label": "Pressure",
+            "score": 37
+        }
+    },
+    "hero_confidence": {
+        "top_heroes": [
+            {
+                "hero": "junker-queen",
+                "games_played": 131,
+                "winrate": 65.65,
+                "kda": 5.17,
+                "hero_confidence": 86,
+                "hero_pool": "Proven Pick"
+            },
+            {
+                "hero": "sombra",
+                "games_played": 480,
+                "winrate": 54.58,
+                "kda": 3.74,
+                "hero_confidence": 64,
+                "hero_pool": "Comfort Pick"
+            },
+            {
+                "hero": "moira",
+                "games_played": 139,
+                "winrate": 51.08,
+                "kda": 4.09,
+                "hero_confidence": 59,
+                "hero_pool": "Comfort Pick"
+            },
+            {
+                "hero": "mercy",
+                "games_played": 190,
+                "winrate": 53.16,
+                "kda": 1.52,
+                "hero_confidence": 49,
+                "hero_pool": "Risk Pick"
+            },
+            {
+                "hero": "reaper",
+                "games_played": 186,
+                "winrate": 46.24,
+                "kda": 3.01,
+                "hero_confidence": 47,
+                "hero_pool": "Risk Pick"
+            }
+        ]
+    },
+    "flex_rating": 38,
+    "flex_label": "Specialist",
+    "role_confidence": {
+        "best_role": {
+            "role": "tank",
+            "role_confidence": 70,
+            "winrate": 55.66,
+            "kda": 4.1,
+            "games_played": 212
+        },
+        "all_roles": [
+            {
+                "role": "damage",
+                "games_played": 1547,
+                "winrate": 49.06,
+                "kda": 2.74,
+                "role_confidence": 55
+            },
+            {
+                "role": "support",
+                "games_played": 613,
+                "winrate": 50.73,
+                "kda": 2.57,
+                "role_confidence": 57
+            },
+            {
+                "role": "tank",
+                "games_played": 212,
+                "winrate": 55.66,
+                "kda": 4.1,
+                "role_confidence": 70
+            }
+        ]
+    },
+    "hero_pool": {
+        "counts": {
+            "Unproven": 26,
+            "Risk Pick": 21,
+            "Comfort Pick": 2,
+            "Proven Pick": 1
+        },
+        "risk_picks": [
+            {
+                "hero": "hanzo",
+                "games_played": 282,
+                "winrate": 48.94,
+                "kda": 2.03,
+                "hero_confidence": 45
+            },
+            {
+                "hero": "mercy",
+                "games_played": 190,
+                "winrate": 53.16,
+                "kda": 1.52,
+                "hero_confidence": 49
+            },
+            {
+                "hero": "reaper",
+                "games_played": 186,
+                "winrate": 46.24,
+                "kda": 3.01,
+                "hero_confidence": 47
+            },
+            {
+                "hero": "kiriko",
+                "games_played": 148,
+                "winrate": 47.3,
+                "kda": 2.6,
+                "hero_confidence": 46
+            },
+            {
+                "hero": "sojourn",
+                "games_played": 140,
+                "winrate": 48.57,
+                "kda": 2.47,
+                "hero_confidence": 46
+            }
+        ]
+    },
+    "ai_review_inputs": {
+        "gamestat_score": 56,
+        "pressure_rating": 37,
+        "reliability_score": 58,
+        "flex_rating": 38,
+        "flex_label": "Specialist",
+        "best_role": {
+            "role": "tank",
+            "role_confidence": 70,
+            "winrate": 55.66,
+            "kda": 4.1,
+            "games_played": 212
+        },
+        "top_heroes": [
+            {
+                "hero": "junker-queen",
+                "games_played": 131,
+                "winrate": 65.65,
+                "kda": 5.17,
+                "hero_confidence": 86,
+                "hero_pool": "Proven Pick"
+            },
+            {
+                "hero": "sombra",
+                "games_played": 480,
+                "winrate": 54.58,
+                "kda": 3.74,
+                "hero_confidence": 64,
+                "hero_pool": "Comfort Pick"
+            },
+            {
+                "hero": "moira",
+                "games_played": 139,
+                "winrate": 51.08,
+                "kda": 4.09,
+                "hero_confidence": 59,
+                "hero_pool": "Comfort Pick"
+            },
+            {
+                "hero": "mercy",
+                "games_played": 190,
+                "winrate": 53.16,
+                "kda": 1.52,
+                "hero_confidence": 49,
+                "hero_pool": "Risk Pick"
+            },
+            {
+                "hero": "reaper",
+                "games_played": 186,
+                "winrate": 46.24,
+                "kda": 3.01,
+                "hero_confidence": 47,
+                "hero_pool": "Risk Pick"
+            }
+        ],
+        "hero_pool_counts": {
+            "Unproven": 26,
+            "Risk Pick": 21,
+            "Comfort Pick": 2,
+            "Proven Pick": 1
+        },
+        "risk_picks": [
+            {
+                "hero": "hanzo",
+                "games_played": 282,
+                "winrate": 48.94,
+                "kda": 2.03,
+                "hero_confidence": 45
+            },
+            {
+                "hero": "mercy",
+                "games_played": 190,
+                "winrate": 53.16,
+                "kda": 1.52,
+                "hero_confidence": 49
+            },
+            {
+                "hero": "reaper",
+                "games_played": 186,
+                "winrate": 46.24,
+                "kda": 3.01,
+                "hero_confidence": 47
+            },
+            {
+                "hero": "kiriko",
+                "games_played": 148,
+                "winrate": 47.3,
+                "kda": 2.6,
+                "hero_confidence": 46
+            },
+            {
+                "hero": "sojourn",
+                "games_played": 140,
+                "winrate": 48.57,
+                "kda": 2.47,
+                "hero_confidence": 46
+            }
+        ],
+        "performance_snapshot": {
+            "scores": [
+                {
+                    "key": "winrate_score",
+                    "label": "Win Rate",
+                    "score": 40
+                },
+                {
+                    "key": "kda_score",
+                    "label": "KDA",
+                    "score": 56
+                },
+                {
+                    "key": "pressure_rating",
+                    "label": "Pressure",
+                    "score": 37
+                },
+                {
+                    "key": "flex_rating",
+                    "label": "Flex",
+                    "score": 38
+                },
+                {
+                    "key": "best_role_score",
+                    "label": "Best Role",
+                    "score": 70
+                },
+                {
+                    "key": "top_hero_score",
+                    "label": "Top Hero",
+                    "score": 86
+                }
+            ],
+            "strongest_area": {
+                "key": "top_hero_score",
+                "label": "Top Hero",
+                "score": 86
+            },
+            "weakest_area": {
+                "key": "pressure_rating",
+                "label": "Pressure",
+                "score": 37
+            }
+        }
+    }
+}

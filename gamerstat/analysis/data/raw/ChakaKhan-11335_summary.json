@@ -1,0 +1,39 @@
+{
+    "username": "ChakaKhan",
+    "avatar": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e2d3abfd68a0ccca698a7deb1899f3c1e2b904fade65677f8755f86272cc9c1d.png",
+    "namecard": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/01e3ff709186272bc03d89b87c674e519bc7e980ab5b0fe7717178ddd3290a5f.png",
+    "title": "Beach Bum",
+    "endorsement": {
+        "level": 4,
+        "frame": "https://static.playoverwatch.com/images/pages/career/icons/endorsement/4.3b2140459f3c83ff3e9ce180646c692184aa2833.svg#icon"
+    },
+    "competitive": {
+        "pc": {
+            "tank": {
+                "division": "gold",
+                "tier": 3,
+                "role_icon": "https://static.playoverwatch.com/images/pages/career/icons/role/tank.e363265db45af83a0a5613072d7a888b1bf8a5b5.svg#icon",
+                "rank_icon": "https://static.playoverwatch.com/images/pages/career/icons/rank/Rank_GoldTier.8d40eab551020b46a84002019dd98714149ed5e2.png",
+                "tier_icon": "https://static.playoverwatch.com/images/pages/career/icons/rank/TierDivision_3.e9d892e479ca14e5543e71762459d11674504ed0.png"
+            },
+            "damage": {
+                "division": "gold",
+                "tier": 4,
+                "role_icon": "https://static.playoverwatch.com/images/pages/career/icons/role/offense.0f3b26f08388747909719cb6f8940d0b4683039e.svg#icon",
+                "rank_icon": "https://static.playoverwatch.com/images/pages/career/icons/rank/Rank_GoldTier.8d40eab551020b46a84002019dd98714149ed5e2.png",
+                "tier_icon": "https://static.playoverwatch.com/images/pages/career/icons/rank/TierDivision_4.a86ba72795dcef9e04b6346163d3369eec13393f.png"
+            },
+            "support": {
+                "division": "platinum",
+                "tier": 5,
+                "role_icon": "https://static.playoverwatch.com/images/pages/career/icons/role/support.f4dbde20ae498cf0d6fd01e697fada8d99ec3a72.svg#icon",
+                "rank_icon": "https://static.playoverwatch.com/images/pages/career/icons/rank/Rank_PlatinumTier.694340e3a5b2031d4fac9eb1d8f52c6855d4c072.png",
+                "tier_icon": "https://static.playoverwatch.com/images/pages/career/icons/rank/TierDivision_5.b1cc1770c12501c536e18127c83169f65e3e5de0.png"
+            },
+            "open": null,
+            "season": 22
+        },
+        "console": null
+    },
+    "last_updated_at": 1783240542
+}

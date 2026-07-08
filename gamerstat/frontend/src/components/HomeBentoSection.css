@@ -260,3 +260,37 @@
         transform: translateY(-2px);
     }
 }
+
+.username-form {
+    width: 100%;
+}
+
+.username-box-button {
+    width: 100%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: inherit;
+    font: inherit;
+    text-align: center;
+
+    cursor: text;
+}
+
+.username-input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: inherit;
+    font: inherit;
+    text-align: center;
+}
+
+.username-input::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}

@@ -1,0 +1,4 @@
+role,games_played,games_won,games_lost,time_played,winrate,kda,total_eliminations,total_assists,total_deaths,total_damage,total_healing,average_eliminations,average_assists,average_deaths,average_damage,average_healing
+damage,1547,759,788,750611,49.06,2.74,23933,1777,9379,10841800,592253,19.13,1.42,7.5,8666.38,473.42
+support,613,311,302,318266,50.73,2.57,6784,1419,3198,2256510,3631892,12.79,2.68,6.03,4254.01,6846.9
+tank,212,118,94,98239,55.66,4.1,3825,136,967,1951624,333418,23.36,0.83,5.91,11919.65,2036.37
