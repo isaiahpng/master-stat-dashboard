@@ -166,3 +166,53 @@
         justify-self: end;
     }
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        width: calc(100% - 2rem);
+        max-width: none;
+        height: 86px;
+        margin: 1.25rem auto 0;
+        padding: 0 1.4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-radius: 999px;
+        overflow: hidden;
+    }
+
+    .navbar-logo {
+        font-size: clamp(2rem, 9vw, 3.1rem);
+        line-height: 1;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .navbar-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.1rem;
+
+        font-size: 1.2rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .navbar-links a {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    .navbar-actions {
+        display: none;
+    }
+}
+
+.navbar-logo {
+    font-family: inherit;
+    font-weight: 500;
+}

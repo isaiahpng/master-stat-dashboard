@@ -326,3 +326,22 @@
         transform: translateX(260%);
     }
 }
+
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: clamp(3.5rem, 12vw, 5rem);
+        line-height: 1;
+    }
+
+    .username-box {
+        width: 100%;
+        min-height: 96px;
+        padding: 0 1.25rem;
+    }
+
+    .username-box-button,
+    .username-input {
+        font-size: clamp(3.2rem, 14vw, 5rem);
+        line-height: 1;
+    }
+}
