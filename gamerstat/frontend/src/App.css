@@ -14,3 +14,11 @@ html {
 section {
   scroll-margin-top: 120px;
 }
+
+@font-face {
+    font-family: "GameStatLogo";
+    src: url("/fonts/mizufalp.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
