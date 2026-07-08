@@ -345,3 +345,53 @@
         line-height: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .username-box {
+        width: 100%;
+        min-height: 92px;
+        padding: 1rem 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .username-box-button,
+    .username-input {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: clamp(2rem, 9vw, 3.5rem);
+        line-height: 1.05;
+        text-align: center;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .username-input {
+        font-size: clamp(1.5rem, 7vw, 2.4rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .z-score-container {
+        padding: 3rem 1.5rem;
+    }
+
+    .z-score {
+        font-size: clamp(5rem, 22vw, 8rem);
+        line-height: 0.9;
+    }
+
+    .z-score-title {
+        margin-top: 1.25rem;
+    }
+
+    .z-score-info {
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

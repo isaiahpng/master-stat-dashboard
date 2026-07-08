@@ -152,7 +152,7 @@ export default function HomeBentoSection({
                     </div>
 
                     {/* Top middle card */}
-                    <div className="relative max-lg:row-start-1">
+                    <div className="relative">
                         <div className="absolute inset-px rounded-[2rem] border border-white/1 bg-[rgba(63, 63, 63, 0.25)] backdrop-blur-[18px] backdrop-saturate-150" />
 
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[1.35rem]">
